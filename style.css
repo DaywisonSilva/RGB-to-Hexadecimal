@@ -1,0 +1,102 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    animation: fundo 15s linear infinite alternate;
+}
+@keyframes fundo{
+    0%{
+        background-color: rgb(3, 133, 103);
+    }
+    25%{
+        background-color: rgb(174, 124, 15);
+    }
+    50%{
+        background-color: rgb(54, 47, 140);
+    }
+    75%{
+        background-color: rgb(175, 18, 115);
+    }
+    100%{
+        background-color: rgb(186, 76, 4);
+    }
+}
+body h1{
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+    color: rgb(228, 228, 228);
+}
+.container{
+    width: 100%;
+    padding: 20px;   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: rgb(66, 65, 65);
+}
+label:nth-of-type(1){
+    color: rgb(247, 64, 64);
+}
+label:nth-of-type(2){
+    color: rgb(43, 182, 5);
+}
+label:nth-of-type(3){
+    color: rgb(104, 155, 243);
+}
+.container input{
+    width: 250px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 1em;
+}
+span{
+    display: block;
+    width: 100px;
+    color: rgb(226, 226, 226);
+}
+
+.valores::before{
+    content: 'RGB: ';
+    font-weight: bolder;
+}
+.resultado::before{
+    content: 'Hexadecimal: ';
+    font-weight: bolder;
+}
+.resultado{
+    text-transform: uppercase;
+}
+.respostas{
+    width: 100%;
+    padding: 20px 15%;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 2;
+    font-size: 1.2em;
+    color: rgb(230, 230, 230);
+}
+.color{
+    width: 150px;
+    height: 150px;
+    margin: 20px auto 0 auto;
+    background-color: white;
+    border-radius: 50%;
+    border: 4px solid rgb(56, 56, 56);
+}
+
+@media (max-width: 400px){
+    body h1{
+        font-size: 1em;
+    }
+}
+@media (max-height: 640px){
+    .color{
+        margin: 0px auto;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daywison">
+    <meta name="keywords" content="rgb, hexadecimal, cores">
+    <meta name="description" content="Converta cor rgb em hexadecimal de forma fácil">
+    <link rel="stylesheet" href="style.css">
+    <title>RBG Converter</title>
+</head>
+
+<body>
+    <h1>Conversor RGB → HEXADECIMAL</h1>
+    <div class="container">
+        <label for="red">
+            Red (Vermelho)
+        </label>
+        <div>
+            <input type="range" id="red" min="0" max="255">
+            <span id="valueRed"></span>
+        </div>
+        <br>
+        <label for="green">
+            Green (Verde)
+        </label>
+        <div>
+            <input type="range" id="green" min="0" max="255">
+            <span id="valueGreen"></span>
+        </div>
+        <br>
+        <label for="blue">
+            Blue (Azul)
+        </label>
+        <div>
+            <input type="range" id="blue" min="0" max="255">
+            <span id="valueBlue"></span>
+        </div>
+        <br>
+        <button onclick="enviarDados()">
+            Converter
+        </button>
+    
+        <div class="respostas">
+            <div class="valores">
+            
+            </div>
+            <div class="resultado">
+        
+            </div>
+        </div>
+    </div>
+    <div class="color">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
