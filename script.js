@@ -81,7 +81,7 @@ function enviarDados() {
     }
 
     function numberToStringOne() {
-        if (resThreeT >= 10 && resOneT <= 15) {
+        if (resOneT >= 10 && resOneT <= 15) {
             resOneTT = resOneT.toString(16);
         } else {
             resOneTT = resOneT;
@@ -89,7 +89,7 @@ function enviarDados() {
     }
 
     function numberToStringTwo() {
-        if (resThreeT >= 10 && resTwoT <= 15) {
+        if (resTwoT >= 10 && resTwoT <= 15) {
             resTwoTT = resTwoT.toString(16);
         } else {
             resTwoTT = resTwoT;
